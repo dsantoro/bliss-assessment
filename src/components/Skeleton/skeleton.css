@@ -1,0 +1,78 @@
+.skeleton {
+  display: flex;
+  padding: 1rem;
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+              100%, 0.075),
+              0 0 0 1px hsla(0, 0%, 0%, 0.05),
+              0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+              0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+              0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+  border-radius: 0.5rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.skeleton__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skeleton__element--image {
+  max-width: 80px !important;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.skeleton__element--text {
+  height: 30px !important;
+  width: 100%;
+}
+
+.skeleton__animation {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #5f748a;
+  border-radius: 4px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton__body {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+.skeleton__body__elements {
+  height: 56px !important;
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.stacked > div:nth-child(2) {
+  max-width: 60%;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+}

@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.header:after, header:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0 30px var(--swift), 0 0 0 60px var(--python), 0 0 0 90px var(--objective-c), 0 0 0 120px var(--ruby);
+  z-index: -1;
+  transform: rotateZ(35deg);
+}
+
+header:before {
+  left: unset;
+  right: 0;
+}

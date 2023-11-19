@@ -1,0 +1,13 @@
+.error {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.error img {
+  margin-bottom: 1rem;
+}
+
+.error p {
+  font-size: 3rem;
+}
