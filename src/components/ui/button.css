@@ -14,7 +14,7 @@ button {
 }
 
 .button--default {
-  --button-color: #f3e7e7;
+  --button-color: #6d6a6a;
 }
 
 .button--default:after {

@@ -15,7 +15,7 @@
 
   --color-border: rgb(97, 85, 85);
   --text-color: rgba(255, 255, 255, 0.87);
-  --button-color: #646cff;
+  --button-color: #f3e7e7;
 
   --swift: #ffac45;
   --python: #1f8365;
@@ -54,12 +54,14 @@ h1 {
   :root {
     color: #213547;
     background-color: #ffffff;
+    --text-color: rgba(0, 0, 0, 0.87);
+    --button-color: #242424;
+  }
+  h2, span {
+    color: #242424;
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
 
